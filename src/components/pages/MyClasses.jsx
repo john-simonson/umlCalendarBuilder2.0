@@ -22,6 +22,7 @@ export default function MyClasses() {
 
   return (
     <React.Fragment>
+      <div style="overscroll-behavior: contain">
       <Nav
           navItems={[
             { name: "Home", to: "/" }, 
@@ -33,6 +34,7 @@ export default function MyClasses() {
                   <ClassCard id={course.id} name={course.name} deptCode={course.departmentCode} number={course.number} section={course.sectionNumber} time={course.time} days={course.days} building={course.building} room={course.room}/>
                 </div>
         )}
+        </div>
     </React.Fragment>
   );
 }
