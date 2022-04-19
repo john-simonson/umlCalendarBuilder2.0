@@ -1,0 +1,3 @@
+Navbar template from: https://tailwindui.com/components/application-ui/navigation/navbars
+Changes made: Modified from original and restyled to work with mobile app color palette and theme
+
