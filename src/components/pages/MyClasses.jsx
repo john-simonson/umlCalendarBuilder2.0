@@ -3,6 +3,7 @@ import React from 'react';
 import {getAuth} from 'firebase/auth';
 import selectDataUser from "../../scripts/selectDataUser";
 import ClassCard from "../ClassCard";
+import OverflowScrolling from 'react-overflow-scrolling';
 
 export default function MyClasses() { 
     const [classes, setClasses] = React.useState([]);
@@ -22,7 +23,7 @@ export default function MyClasses() {
 
   return (
     <React.Fragment>
-      <div style="overscroll-behavior: contain">
+      <OverflowScrolling className='overflow-scrolling'>
       <Nav
           navItems={[
             { name: "Home", to: "/" }, 
@@ -34,7 +35,7 @@ export default function MyClasses() {
                   <ClassCard id={course.id} name={course.name} deptCode={course.departmentCode} number={course.number} section={course.sectionNumber} time={course.time} days={course.days} building={course.building} room={course.room}/>
                 </div>
         )}
-        </div>
+        </OverflowScrolling>
     </React.Fragment>
   );
 }
