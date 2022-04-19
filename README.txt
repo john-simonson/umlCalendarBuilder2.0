@@ -1,1 +1,1 @@
-Repository for Mobile App Deveolpment 2 projects and assignments
+Repository for mobile app development 2 course project
