@@ -1,0 +1,5 @@
+to install: visit calendaru.ml and click on the insall button or add to home screen button when prompted
+
+to build: take source code from this directory and build using npm (npm run build)
+
+run in web browser.
