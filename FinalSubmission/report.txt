@@ -1,0 +1,3 @@
+I set out to imporove the UI and add extra features to my uml calendar builder app from Mobile App Development 1. I chose to create a PWA using React and Firebase to have
+user data synced automatically and have a nicer looking more responsive UI. I chose to make a PWA since the base projects was also a PWA and chose to use React as I had
+previous experience using it. I chose to use Firebase over other database options for the free hosting and previous expierience.
