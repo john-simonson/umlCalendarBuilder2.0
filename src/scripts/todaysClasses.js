@@ -8,10 +8,10 @@ export default function todaysClasses(classes, calendar, Date){
             tmpTxt = calendar[i][1];
             tmpTxt = tmpTxt.replace(/\\n/g," ");
             //console.log(tmpTxt);
-            if(calendar === true){
+            if(calendar[i][2] === true){
                 testString = "Made Up Day";
             }
-            if(calendar === true){
+            if(calendar[i][3] === true){
                 testString = "Monday";
             }
         }
