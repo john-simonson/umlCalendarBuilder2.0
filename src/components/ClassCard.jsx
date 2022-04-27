@@ -1,8 +1,11 @@
 import React from "react"
 import deleteClasses from "../scripts/deleteClass";
 import {getAuth} from 'firebase/auth';
+import { useNavigate } from "react-router";
+
 
 export default function ClassCard(props){
+    const navigate = useNavigate();
 return(
     <React.Fragment>
         <div className="mx-auto md:w-2/6 w-4/6 border border-solid border-white rounded-2xl bg-indigo-400 text-white p-2">
@@ -31,6 +34,7 @@ return(
             <button onClick={() => {
                 getAuth().onAuthStateChanged((user) => {
                     deleteClasses(user.uid, props.id);
+                    navigate("/");
                 });
             }}
             className="flex justify-center mx-auto px-2 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-indigo-600 rounded-lg focus:shadow-outline hover:bg-red-500">Delete Class</button>
