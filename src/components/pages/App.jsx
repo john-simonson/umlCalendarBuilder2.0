@@ -189,28 +189,28 @@ export default function App() {
         <div className="bg-indigo-400 text-white w-4/6 border border-solid border-white rounded-2xl">
           <div className="flex justify-center px-4 py-2">
             <div className="px-2">
-            <button className="text-xl border border-solid border-white rounded-md py-1 px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
+            <button className="md:text-xl border border-solid border-white rounded-md md:py-1 md:px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
             minusWeek();
             console.log(date);
             update();
           }}> -7 Days </button>
           </div>
           <div className="px-2">
-          <button className="text-xl border border-solid border-white rounded-md py-1 px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
+          <button className="md:text-xl border border-solid border-white rounded-md md:py-1 md:px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
             minusDay();
             console.log(date);
             update();
           }}> -1 Days </button>
           </div>
           <div className="px-2">
-          <button className="text-xl border border-solid border-white rounded-md py-1 px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
+          <button className="md:text-xl border border-solid border-white rounded-md md:py-1 md:px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
             plusDay();
             console.log(date);
             update();
           }}> +1 Days </button>
           </div>
           <div className="px-2">
-          <button className="text-xl border border-solid border-white rounded-md py-1 px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
+          <button className="md:text-xl border border-solid border-white rounded-md md:py-1 md:px-3 hover:bg-indigo-600 bg-indigo-500" onClick={() => {
             plusWeek();
             console.log(date);
             update();
