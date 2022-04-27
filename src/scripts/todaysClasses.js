@@ -1,7 +1,7 @@
-export default function todaysClasses(classes, calendar){
+export default function todaysClasses(classes, calendar, Date){
     //console.log(calendar);
     var tmpTxt;
-    let date = new Date();
+    let date = Date
     let testString = date.toLocaleDateString('en', { weekday: 'long' });
     for(var i=0; i < calendar.length; i++){
         if(calendar[i][0] === date.toLocaleString('default', {month:'long'}) + " " + date.getDate()){
